@@ -1,0 +1,205 @@
+:root {
+  --boddy-color: #F0F0F0;
+  --screen-one: #828282;
+  --screen-two: #C4B668;
+  --light: #C08D8D;
+  --platzi-color: #96CB3F;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* html {
+  font-size: 62.5%;
+} */
+
+/* Start */
+.container {
+  position: relative;
+  width: 70%;
+  height: 100vh;
+  margin: 50px auto;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+}
+.main-container {
+  width: 350px;
+  height: 550px;
+  margin: 0 auto;
+  background-color: rgb(27, 206, 3);
+  border-radius: 10px 10px 50px 10px;
+  box-shadow: 0 4px 8px rgba(112, 112, 112, 0.8);
+}
+.screen-one {
+  width: 80%;
+  height: 220px;
+  margin: 35px auto;
+  background-color: var(--screen-one);
+  border-radius: 8px 8px 40px 8px;
+  text-align: center;
+  padding: 15px;
+}
+.screen-one--text {
+  text-align: center;
+  color: rgb(199, 194, 194);
+  font-size: 14px;
+}
+.screen-two {
+  width: 85%;
+  height: 80%;
+  margin: 0 auto;
+  margin-top: 5px;
+  background-color: var(--screen-two);
+  /* background-image: url('./ProfesoraPlatzi.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; */
+}
+.light{
+  display: block;
+  font-size: 65px;
+color: var(--light);
+position: absolute;
+top: 100px;
+left: calc(50% - 130px);
+}
+.light span {
+  display: block;
+  position: absolute;
+  font-size: 10px;
+  left: -8px;
+  top: 62px;
+  color: rgb(180, 176, 176);
+}
+
+/* second part */
+.main-second-part {
+  position: relative;
+  display: flex;
+  justify-content:space-around;
+}
+.joystick {
+  width: 60px;
+  height: 60px;
+  margin-top: 40px;
+}
+.joystick-one {
+  position: absolute;
+  padding:  12px 37px;
+  border-radius: 3px;
+  background-color: rgb(211, 210, 210);
+  left: 37px;
+
+}
+.joystick-two {
+  position: absolute;
+  padding: 34px 12px;
+  border-radius: 3px;
+  background-color: rgb(211, 210, 210);
+  /* transform: rotate(90deg); */
+  top: 17px;
+  left: 63px;
+}
+.joystick-three{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(187, 185, 185);
+  border-radius: 50%;
+  left: 62px;
+  top: 39px;
+}
+.red-button-container {
+  width: 110px;
+  height: 80px;
+  margin-top: 30px;
+  /* border: 1px solid blue; */
+}
+.red-button--bgd {
+  display: flex;
+  position: relative;
+  padding: 7px 1px;
+  background-color: rgba(192, 192, 192, 70%);
+  border-radius: 30px;
+  transform: rotate(150deg);
+}
+.red-button {
+  /* display: inline-block; */
+  width: 35px;
+  height: 35px;
+  margin: 0 auto;
+  /* margin-right: 10px; */
+  border-radius: 50%;
+  background-color: rgb(224, 19, 19);
+}
+.small-button-container {
+  display: flex;
+  justify-content: center;
+}
+.small-button {
+  display: flex;
+  justify-content:space-around;
+  width: 50px;
+  height: 40px;
+  /* background-color: rgba(192, 192, 192, 70%); */
+  transform: rotate(55deg);
+}
+.small-button--part1 {
+  position: absolute;
+  padding: 22px 4px;
+  background-color: red;
+  border-radius: 8px;
+  left: 3px;
+  top: 6px;
+}
+.main-small-button--part1 {
+  position: absolute;
+  background-color: rgba(192, 192, 192, 70%);
+  padding: 28px 7px;
+  left: 25px;
+  top: -18px;
+  border-radius: 8px;
+}
+.main-small-button--part2 {
+  position: absolute;
+  background-color: rgba(192, 192, 192, 70%);
+  padding: 28px 7px;
+  left: 0px;
+  top: 18px;
+  border-radius: 8px;
+}
+.small-button--part2 {
+  position: absolute;
+  padding: 22px 4px;
+  background-color: red;
+  border-radius: 8px;
+  left: 3px;
+  top: 6px;
+  
+}
+.main-line-sound-container {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  top: 9px;
+  left: calc(50% - -47px);
+  transform: rotate(-27deg);
+}
+.line-sound {
+  display: inline-block;
+  width: 4px;
+  height: 60px;
+  background-color: rgba(59,59,59, 60%);
+  margin-right: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(59,59,59,0.10);
+}
+.main-container-line-sound {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
